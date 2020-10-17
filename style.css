@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+/*header*/
 #header-nav{
     position: fixed;
     top: 0;
@@ -20,6 +21,13 @@ body{
     display: inline;
 }
 
+#instagram-glyph{
+    margin: 0;
+    display: inline;
+    position: relative;
+    top: 2px;
+}
+
 #navbar-left-span{
     float: left;
     display: inline-block;
@@ -29,10 +37,11 @@ body{
 }
 
 .verticle-divider{
-    display: inline-block;
+    display: inline;
     width: 0;
-    height: 45px;
+    height: 1rem;
     border-left: 2px gray solid;
+    margin: 0 8px;
 }
 
 #navbar-center-span{
@@ -59,3 +68,34 @@ body{
 #navbar-compass-icon{
     margin-left: 0;
 }
+
+/*main body media queries*/
+/*.user-stories{*/
+/*    display: flex;*/
+/*}*/
+/*.post-wrapper{*/
+/*    display: flex;*/
+/*}*/
+main{
+    display: flex;
+}
+
+.post-wrapper{
+    width: 60%;
+}
+.user-stories{
+    width: 40%;
+}
+@media only screen and (max-width: 600px){
+    .post-wrapper{
+        width: 100%;
+    }
+    #stories-sidebar{
+        display: none;
+    }
+}
+
+.posts{
+    margin: 1rem;
+}
+
