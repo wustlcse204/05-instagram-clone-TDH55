@@ -1,7 +1,21 @@
 body{
     margin: 0;
 }
+
+.bold-text{
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #222222;
+}
+p{
+    font-family: sans-serif;
+    font-size: 0.75rem;
+}
 /*header*/
+.header{
+    z-index: 1;
+}
 #header-nav{
     position: fixed;
     top: 0;
@@ -32,7 +46,6 @@ body{
     float: left;
     display: inline-block;
     position: relative;
-    left: 100px;
     top: 25%;
 }
 
@@ -54,7 +67,6 @@ body{
     display: inline-block;
     float: right;
     position: relative;
-    right: 100px;
     top: 25%;
 }
 
@@ -70,21 +82,30 @@ body{
 }
 
 /*main body media queries*/
-/*.user-stories{*/
-/*    display: flex;*/
-/*}*/
-/*.post-wrapper{*/
-/*    display: flex;*/
-/*}*/
+
+.content-wrapper{
+    max-width: 1600px;
+    padding: 0 100px;
+}
+#header-content-wrapper{
+    display: block;
+    margin: auto;
+}
 main{
+    text-align: center;
+}
+
+#main-content-wrapper{
     display: flex;
+    margin: auto;
 }
 
 .post-wrapper{
-    width: 60%;
+    width: 70%;
+    margin: 1rem 1rem 3rem 0;
 }
 .user-stories{
-    width: 40%;
+    width: 30%;
 }
 @media only screen and (max-width: 600px){
     .post-wrapper{
@@ -95,7 +116,80 @@ main{
     }
 }
 
+/*posts*/
 .posts{
-    margin: 1rem;
+    background-color: white;
 }
+
+.post-header-photo{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.profile-photo{
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+}
+.post-header{
+    height: 2.5rem;
+}
+
+.post-header-span{
+    float: left;
+    height: 2.5rem;
+}
+
+.username{
+    display: inline;
+    position: relative;
+    bottom: 1rem;
+}
+
+
+.photo{
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.post-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.post-footer-buttons{
+    height: 2.5rem;
+}
+
+.post-buttons-span{
+    height: 1rem;
+    margin: 0.75rem 1rem
+}
+
+.post-footer-buttons-left{
+    float: left;
+    display: inline-block;
+}
+
+.post-save-button{
+    float: right;
+    display: inline-block;
+}
+
+.comment-button{
+    margin: 0 0.5rem;
+}
+
+.post-button{
+    /*TODO: fix color*/
+    color: gray;
+}
+.like-button {
+    color: #e9424e;
+}
+
 

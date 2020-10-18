@@ -9,80 +9,96 @@
 </head>
 <body>
     <nav id="header-nav" class="header">
-        <span id="navbar-left-span">
-            <i class="fab fa-instagram" id="instagram-glyph"></i>
-            <div class="divider verticle-divider" id="navbar-verticle-divider"></div>
-            <p id="instagram-title">Instagram</p>
-        </span>
-        <span id="navbar-center-span">
-            <input type="text" id="search-bar" placeholder="search">
-        </span>
-        <span id="navbar-right-span">
-            <i class="far fa-compass header-right-icon" id="navbar-compass-icon"></i>
-            <i class="far fa-heart header-right-icon" id="navbar-heart-icon"></i>
-            <i class="far fa-user header-right-icon" id="navbar-user-icon"></i>
-        </span>
+        <div class="content-wrapper" id="header-content-wrapper">
+            <span id="navbar-left-span">
+                <i class="fab fa-instagram" id="instagram-glyph"></i>
+                <div class="divider verticle-divider" id="navbar-verticle-divider"></div>
+                <p id="instagram-title">Instagram</p>
+            </span>
+                <span id="navbar-center-span">
+                <input type="text" id="search-bar" placeholder="search">
+            </span>
+                <span id="navbar-right-span">
+                <i class="far fa-compass header-right-icon" id="navbar-compass-icon"></i>
+                <i class="far fa-heart header-right-icon" id="navbar-heart-icon"></i>
+                <i class="far fa-user header-right-icon" id="navbar-user-icon"></i>
+            </span>
+        </div>
     </nav>
     <main id="main">
+        <div class="content-wrapper" id="main-content-wrapper">
+            <div class="post-wrapper">
+                <div class="posts" id="post1">
+                    <div class="post-header" id="post1-header">
+                        <span class="post-header-span">
+                           <img src="profile.jpg" alt="profile photo" class="profile-photo post-header-photo" >
+                            <p class="username bold-text">SomePerson</p>
+                        </span>
+                    </div>
+                    <div class="photo" id="post1-photo">
+                        <img src="turtlerock.jpg" class="post-image" alt="A post image">
+                    </div>
+                    <div class="post-footer" id="post1-footer">
+                        <div class="post-footer-buttons" id="post1-footer-buttons">
+                            <span class="post-footer-buttons-left post-buttons-span">
+                                <i class="fas fa-heart like-button post-button"></i>
+                                <i class="far fa-comment fa-flip-horizontal comment-button post-button"></i>
+                                <i class="far fa-paper-plane post-button"></i>
+                            </span>
+                            <span class="post-save-button post-buttons-span">
+                                <i class="far fa-bookmark post-button"></i>
+                            </span>
+                        </div>
+                        <div class="post-footer-info" id="post1-footer-info">
+                            <p class="like-count bold-text"> 12 likes </p>
+                            <span class="caption">
+                                <p class="username bold-text">SomePerson</p>
+                                <p class="caption">A tree </p>
+                                <p class="hashtag">#nature</p>
+                            </span>
+                        </div>
+                        <hr class="divider" id="comment-divider">
+                        <div class="add-comment" id="post1-add-comment">
 
-        <div class="post-wrapper">
-            <div class="posts" id="post1">
-                <div class="post-header" id="post1-header">
-                    hello
+                        </div>
+                    </div>
                 </div>
-                <div class="photo" id="post1-photo">
+            </div>
 
-                </div>
-                <div class="post-footer" id="post1-footer">
-                    <div class="post-footer-buttons" id="post1-footer-buttons">
+            <div class="user-stories" id="stories-sidebar">
+                here
+                <div class="person" id="person1">
+                    <div class="stories-text" id="person1-text">
 
                     </div>
-                    <div class="post-footer-info" id="post1-footer-info">
-
-                    </div>
-                    <hr class="divider" id="comment-divider">
-                    <div class="add-comment" id="post1-add-comment">
-
-                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="user-stories" id="stories-sidebar">
-            here
-            <div class="person" id="person1">
-                <div class="stories-text" id="person1-text">
+                <hr class="divider stories-divider">
+
+                <div class="stories-header">
 
                 </div>
+
+                <!-- TODO: Add more people -->
+                <hr class="divider stories-divider">
+
+                <div class="footer-info" id="sidebar-footer-info">
+                    <span class="footer-text" id="footer-links">
+
+                    </span>
+                    <span class="footer-text" id="copyright-info">
+                    </span>
+                </div>
             </div>
 
-            <hr class="divider stories-divider">
+            <div class="suggestions">
+                <div class="suggestions-header">
 
-            <div class="stories-header">
+                </div>
+                <div class="suggestions-content">
+                    <div class="suggestion-card" id="suggestion1">
 
-            </div>
-
-            <!-- TODO: Add more people -->
-            <hr class="divider stories-divider">
-
-            <div class="footer-info" id="sidebar-footer-info">
-                <span class="footer-text" id="footer-links">
-
-                </span>
-
-                <span class="footer-text" id="copyright-info">
-
-                </span>
-            </div>
-        </div>
-
-        <div class="suggestions">
-            <div class="suggestions-header">
-
-            </div>
-            <div class="suggestions-content">
-                <div class="suggestion-card" id="suggestion1">
-                    
+                    </div>
                 </div>
             </div>
         </div>
