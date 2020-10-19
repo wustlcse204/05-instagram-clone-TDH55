@@ -3,14 +3,19 @@ body{
 }
 
 .bold-text{
-    font-size: 0.75rem;
+    font-size: 14px;
     font-weight: bold;
     font-family: sans-serif;
     color: #222222;
 }
+.text{
+    font-size: 14px;
+    font-family: sans-serif;
+/*    TODO: check color*/
+}
 p{
     font-family: sans-serif;
-    font-size: 0.75rem;
+    font-size: 14px;
 }
 /*header*/
 .header{
@@ -107,6 +112,7 @@ main{
 .user-stories{
     width: 30%;
 }
+
 @media only screen and (max-width: 600px){
     .post-wrapper{
         width: 100%;
@@ -115,10 +121,17 @@ main{
         display: none;
     }
 }
+#stories-sidebar-wrapper{
+    position: fixed;
+    width: inherit;
+}
+
 
 /*posts*/
 .posts{
     background-color: white;
+    border: solid 1px rgba(219, 219, 219, 1);
+    border-radius: 3px;
 }
 
 .post-header-photo{
@@ -192,4 +205,145 @@ main{
     color: #e9424e;
 }
 
+.like-count{
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
 
+.like-count-text{
+    margin: 0;
+}
+
+.caption{
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.time-posted{
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.time-posted-text{
+    color: #8f9199;
+}
+
+.hashtag{
+    color: #164381;
+}
+
+/*TODO: change to a border*/
+.divider{
+    color: lightgray;
+}
+
+.add-comment{
+    border-top: 1px solid rgba(239, 239, 239, 1);
+    margin: 0 1rem;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.add-comment-text{
+    /*margin: 1rem 0;*/
+    color: #8e8e8e;
+}
+
+/*suggestions*/
+.suggestions{
+    margin-top: 3rem;
+    background-color: white;
+    border: solid 1px rgba(219, 219, 219, 1);
+    border-radius: 3px;
+}
+.suggestions-header{
+    text-align: left;
+    padding: 1rem 1rem 0;
+
+}
+
+.suggestions-header-see-all{
+    float: right;
+}
+
+.suggestions-header-text{
+    color: #8e8e8e;
+}
+
+.see-all-text{
+    color: #328de9;
+}
+
+/*Stories*/
+.user-stories{
+    margin-top: 1rem;
+}
+
+.suggestions-content{
+    /*margin: 1rem;*/
+}
+
+#suggestion1{
+    margin-left: 1rem;
+}
+
+.suggestion-card{
+    border: solid 1px rgba(219, 219, 219, 1);
+    border-radius: 3px;
+    width: 30%;
+    margin: 1rem 0.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.cancel-button{
+    float: right;
+    position: relative;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: #909090;
+}
+
+.suggestions-profile-photo{
+    width: 30%;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.suggested-profile-name{
+    font-weight: bold;
+    font-size: 14px;
+}
+.suggested-profile-name-wrapper{
+    margin-bottom: 0.25rem;
+}
+
+.suggestion-reason{
+    font-size: 12px;
+    color: #8e8f8f;
+}
+
+.suggestion-reason-wrapper{
+    margin-bottom: 2rem;
+}
+
+.follow-button-wrapper{
+    width: 75%;
+    margin: 0 auto 1.5rem;
+
+}
+
+.follow-button{
+    width: 100%;
+    height: 2rem;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: #328de9;
+    border: none;
+    border-radius: 6px;
+}
