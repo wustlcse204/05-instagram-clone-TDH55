@@ -15,10 +15,12 @@
                 <div class="divider verticle-divider" id="navbar-verticle-divider"></div>
                 <p id="instagram-title">Instagram</p>
             </span>
-                <span id="navbar-center-span">
-                <input type="text" id="search-bar" placeholder="search">
+            <span id="navbar-center-span">
+                <label for="search-bar">
+                    <input type="text" id="search-bar" placeholder="search">
+                </label>
             </span>
-                <span id="navbar-right-span">
+            <span id="navbar-right-span">
                 <i class="far fa-compass header-right-icon" id="navbar-compass-icon"></i>
                 <i class="far fa-heart header-right-icon" id="navbar-heart-icon"></i>
                 <i class="far fa-user header-right-icon" id="navbar-user-icon"></i>
@@ -28,6 +30,7 @@
     <main id="main">
         <div class="content-wrapper" id="main-content-wrapper">
             <div class="post-wrapper">
+
                 <div class="posts" id="post1">
                     <div class="post-header" id="post1-header">
                         <span class="post-header-span">
@@ -70,6 +73,50 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="posts" id="post2">
+                    <div class="post-header" id="post2-header">
+                        <span class="post-header-span">
+                           <img src="Mars.jpg" alt="profile photo" class="profile-photo post-header-photo" >
+                            <p class="username bold-text">UserName2</p>
+                        </span>
+                    </div>
+                    <div class="photo" id="post2-photo">
+                        <img src="dog.jpg" class="post-image" alt="A post image">
+                    </div>
+                    <div class="post-footer" id="post2-footer">
+                        <div class="post-footer-buttons" id="post2-footer-buttons">
+                            <span class="post-footer-buttons-left post-buttons-span">
+                                <i class="fas fa-heart like-button post-button"></i>
+                                <i class="far fa-comment fa-flip-horizontal comment-button post-button"></i>
+                                <i class="far fa-paper-plane post-button"></i>
+                            </span>
+                            <span class="post-save-button post-buttons-span">
+                                <i class="far fa-bookmark post-button"></i>
+                            </span>
+                        </div>
+                        <div class="post-footer-info" id="post2-footer-info">
+                            <div class="like-count">
+                                <p class="bold-text like-count-text"> 200 likes</p>
+                            </div>
+                            <div class="caption">
+                                <span class="text">
+                                    <span class="poster-username bold-text">UserName2</span>
+                                    A puppy
+                                    <span class="hashtag"> #dogs</span>
+                                </span>
+                            </div>
+                            <div class="time-posted">
+                                <span class="text time-posted-text">5 HOURS AGO</span>
+                            </div>
+                        </div>
+                        <!--                        <hr class="divider" id="comment-divider">-->
+                        <div class="add-comment" id="post2-add-comment">
+                            <Span class="text add-comment-text">Add a comment...</Span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="suggestions">
                     <div class="suggestions-header">
                         <span class="text suggestions-header-text">Suggestions For You</span>
@@ -81,11 +128,10 @@
                                 <span class="text cancel-button" > X </span>
                             </div>
                             <div class="profile-photo-wrapper">
-                                <img class="profile-photo suggestions-profile-photo" src="profile.jpg" alt="suggested profile photo">
+                                <img class="profile-photo suggestions-profile-photo" src="bluesLogo.png" alt="suggested profile photo">
                             </div>
-<!--&lt;!&ndash;                            TODO: Add check mark&ndash;&gt;-->
                             <div class="suggested-profile-name-wrapper">
-                                <span class="text profile-name suggested-profile-name">St. Louis Blues</span>
+                                <span class="text profile-name suggested-profile-name">St. Louis Blues <img src="blueCheckmark.png" alt="blue-checkmark" class="blue-checkmark"> </span>
                             </div>
                             <div class="suggestion-reason-wrapper">
                                 <span class="text suggestion-reason">Popular</span>
@@ -95,10 +141,38 @@
                             </div>
                         </div>
                         <div class="suggestion-card" id="suggestion2">
-                            card
+                            <div class="cancel-button-wrapper">
+                                <span class="text cancel-button" > X </span>
+                            </div>
+                            <div class="profile-photo-wrapper">
+                                <img class="profile-photo suggestions-profile-photo" src="pluto.jpg" alt="suggested profile photo">
+                            </div>
+                            <div class="suggested-profile-name-wrapper">
+                                <span class="text profile-name suggested-profile-name">Pluto <img src="blueCheckmark.png" alt="blue-checkmark" class="blue-checkmark"></span>
+                            </div>
+                            <div class="suggestion-reason-wrapper">
+                                <span class="text suggestion-reason">Followed by SomeUser</span>
+                            </div>
+                            <div class="follow-button-wrapper">
+                                <button class="follow-button">Follow</button>
+                            </div>
                         </div>
                         <div class="suggestion-card" id="suggestion3">
-                            card
+                            <div class="cancel-button-wrapper">
+                                <span class="text cancel-button" > X </span>
+                            </div>
+                            <div class="profile-photo-wrapper">
+                                <img class="profile-photo suggestions-profile-photo" src="stlouiscardinals.png" alt="suggested profile photo">
+                            </div>
+                            <div class="suggested-profile-name-wrapper">
+                                <span class="text profile-name suggested-profile-name">St. Louis Cardinals <img src="blueCheckmark.png" alt="blue-checkmark" class="blue-checkmark"></span>
+                            </div>
+                            <div class="suggestion-reason-wrapper">
+                                <span class="text suggestion-reason">Popular</span>
+                            </div>
+                            <div class="follow-button-wrapper">
+                                <button class="follow-button">Follow</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,28 +180,128 @@
 
             <div class="user-stories" id="stories-sidebar">
                 <div class="stories-wrapper" id="stories-sidebar-wrapper">
-                    here
                     <div class="person" id="person1">
-                        <div class="stories-text" id="person1-text">
-
+                        <img class="profile-photo stories-photo-inactive" src="profile.jpg" alt="stories photo">
+                        <div class="stories-text">
+                            <div class="text stories-username bold-text" id="person1-text">
+                                Some.Username
+                            </div>
+                            <div class="text stories-subtitle" id="person1-subtitle">
+                                Some Name
+                            </div>
                         </div>
                     </div>
 
-                    <hr class="divider stories-divider">
+<!--                    <hr class="divider stories-divider">-->
 
                     <div class="stories-header">
-
+                        <span class="text stories-label">Stories</span>
+                        <span class="text watch-all-label">Watch All</span>
                     </div>
 
                     <!-- TODO: Add more people -->
-                    <hr class="divider stories-divider">
+                    <div class="stories-list">
+                        <div class="person" id="person2">
+                            <img class="profile-photo stories-photo-active" src="Mars.jpg" alt="stories photo">
+                            <div class="stories-text">
+                                <div class="text stories-username bold-text" id="person2-text">
+                                    UserName2
+                                </div>
+                                <div class="text stories-subtitle" id="person2-subtitle">
+                                    3 Hours Ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person" id="person3">
+                            <img class="profile-photo stories-photo-active" src="mercury.jpg" alt="stories photo">
+                            <div class="stories-text">
+                                <div class="text stories-username bold-text" id="person3-text">
+                                    UserName3
+                                </div>
+                                <div class="text stories-subtitle" id="person3-subtitle">
+                                    4 Hours Ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person" id="person4">
+                            <img class="profile-photo stories-photo-active" src="Neptune.jpg" alt="stories photo">
+                            <div class="stories-text">
+                                <div class="text stories-username bold-text" id="person4-text">
+                                    AnotherUser
+                                </div>
+                                <div class="text stories-subtitle" id="person4-subtitle">
+                                    1 Hour Ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person" id="person5">
+                            <img class="profile-photo stories-photo-active" src="Saturn.jpg" alt="stories photo">
+                            <div class="stories-text">
+                                <div class="text stories-username bold-text" id="person5-text">
+                                    MoreUsers
+                                </div>
+                                <div class="text stories-subtitle" id="person5-subtitle">
+                                    8 Hours Ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person" id="person6">
+                            <img class="profile-photo stories-photo-active" src="Uranus.jpg" alt="stories photo">
+                            <div class="stories-text">
+                                <div class="text stories-username bold-text" id="person6-text">
+                                    EvenMoreUsers
+                                </div>
+                                <div class="text stories-subtitle" id="person6-subtitle">
+                                    20 Hours Ago
+                                </div>
+                            </div>
+                        </div>
+                        <div class="person" id="person7">
+                            <img class="profile-photo stories-photo-active" src="Venus.jpg" alt="stories photo">
+                            <div class="stories-text">
+                                <div class="text stories-username bold-text" id="person7-text">
+                                    YetAnotherUser
+                                </div>
+                                <div class="text stories-subtitle" id="person7-subtitle">
+                                    22 Hours Ago
+                                </div>
+                            </div>
+                        </div>
+                        <div class="person" id="person8">
+                            <img class="profile-photo stories-photo-active" src="Earth.jpg" alt="stories photo">
+                            <div class="stories-text">
+                                <div class="text stories-username bold-text" id="person8-text">
+                                    TheLastUser
+                                </div>
+                                <div class="text stories-subtitle" id="person8-subtitle">
+                                    23 Hours Ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="footer-info" id="sidebar-footer-info">
-                        <span class="footer-text" id="footer-links">
-
-                        </span>
-                            <span class="footer-text" id="copyright-info">
-                        </span>
+                            <ul class="text footer-info footer-info-list">
+                                <li class="footer-list-item"><a href=""> about us</a></li>
+                                <li class="footer-list-item"><a href="">Support</a></li>
+                                <li class="footer-list-item"><a href="">Press</a></li>
+                                <li class="footer-list-item"><a href="">API</a></li>
+                                <li class="footer-list-item"><a href="">Jobs</a> </li>
+                                <li class="footer-list-item"><a href="">Privacy</a></li>
+                                <li class="footer-list-item"><a href="">Terms</a> </li>
+                                <li class="footer-list-item"><a href="">Directory</a> </li>
+                                <li class="footer-list-item"><a href="">Profiles</a></li>
+                                <li class="footer-list-item"><a href="">Hashtags</a> </li>
+                                <li class="footer-list-item"><a href="">Language</a> </li>
+                            </ul>
+                    </div>
+                    <div class="copyright-wrapper">
+                        <span class="text copyright-info footer-info">© 2018 INSTAGRAM</span>
                     </div>
                 </div>
 
